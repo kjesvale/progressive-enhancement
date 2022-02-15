@@ -6,6 +6,7 @@ const port = 3000;
 
 app.use(express.static("public"));
 app.use(express.json());
+app.use(express.urlencoded());
 
 app.get("/api/pokemon", (_, res) => {
     res.json(allPokemon);
