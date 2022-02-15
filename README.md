@@ -28,13 +28,13 @@ Nettsiden vil kjøre på [localhost:1234](http://localhost:1234), mens serveren 
 
 💡 Hvis du har submit-knappen inni et `<form>`-element vil et trykk på knappen automatisk sende inn skjemaet og videresende brukeren til en ny side. Forhindre 
 
-## Oppgave 2: Fallback
+## Oppgave 2: Fallback uten JS
 
 Skru av JavaScript i nettleseren din. I Firefox kan du gå til innstillinger i konsollen, så huke av "Disable JavaScript". I Chrome ligger den samme innstillingen under "Debugger" nederst i konsollinnstillingene.
 
 ✍️ Få skjemaet til å fungere uten noe som helst JavaScript.
 
-## Oppgave 3: Progressive enhancement
+## Oppgave 3: Enhance!
 
 Vi ønsker ikke at brukeren blir videresendt til en ny side når man sender inn et skjema. Samtidig vil vi at kjernefunksjonaliteten skal beholdes selv om JavaScript ikke ble kjørt.
 
