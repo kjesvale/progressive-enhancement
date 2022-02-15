@@ -45,10 +45,10 @@ I `src/index.html`:
 <h2 class="subtitle">Submit a new pokémon</h2>
 
 <form>
-    <label for="name-input" class="field">Name</label>
+    <label for="name-input">Name</label>
     <input id="name-input" type="text" placeholder="Enter name" />
 
-    <label for="type-select" class="field">Type</label>
+    <label for="type-select">Type</label>
     <select id="type-select">
         <option value="">-- Choose a type --</option>
         <option value="fire">Fire</option>
@@ -57,8 +57,8 @@ I `src/index.html`:
         <option value="electric">Electric</option>
     </select>
 
-    <label class="field">Description</label>
-    <textarea id="desc-input" placeholder="Write a short description" />
+    <label for="description-input">Description</label>
+    <textarea id="description-input" placeholder="Write a short description" />
 
     <button id="submit-button">Submit pokemon</button>
 </form>
@@ -68,6 +68,7 @@ I `src/index.html`:
 ## Oppgave 2: Fallback
 
 📖 ["Sending form data" hos MDN](https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data)
+📖 ["POST"-metoden hos MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST)
 
 Skru av JavaScript i nettleseren din. I Firefox kan du gå til innstillinger i konsollen, så huke av "Disable JavaScript". I Chrome ligger den samme innstillingen under "Debugger" nederst i konsollinnstillingene.
 
@@ -76,25 +77,54 @@ Skru av JavaScript i nettleseren din. I Firefox kan du gå til innstillinger i k
 <details>
 <summary>🗝 Løsningsforslag</summary>
 
-Her holder det å bruke `<form>` sine method- og action-attributter i `src/index.html`:
+Her bruker vi `<form>` sine method- og action-attributter i `src/index.html` for å bestemme hvor og hvordan skjemaet skal sendes når brukeren trykker på submit-knappen.
+
+Hvis du ikke gjorde det i forrige oppgave, er det også viktig å legge til `name`-attributten på `input`, `select` og `textarea`-elementene. Når skjemaet sendes med "submit"-eventen, er det ikke lenger i JSON-format, men url-formatert form-data.
+
 
 ```html
 <form method="POST" action="/api/pokemon">
-    ...
+    <label for="name-input" class="field">Name</label>
+    <input
+        name="name"
+        id="name-input"
+        type="text"
+        placeholder="Enter name"
+    />
+
+    <label for="type-select" class="field">Type</label>
+    <select name="type" id="type-select">
+        <option value="">-- Choose a type --</option>
+        <option value="fire">Fire</option>
+        <option value="water">Water</option>
+        <option value="grass">Grass</option>
+        <option value="electric">Electric</option>
+    </select>
+
+    <label class="field">Description</label>
+    <textarea
+        name="description"
+        id="description-input"
+        placeholder="Write a short description"
+    />
+
+    <button id="submit-button">Submit pokemon</button>
 </form>
 ```
 </details>
 
 ## Oppgave 3: Enhance!
 
-Skru på JavaScript igjen.
+📖 ["Submit event" hos MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event)
 
-Vi ønsker ikke at brukeren blir videresendt til en ny side når man sender inn et skjema. Samtidig vil vi at kjernefunksjonaliteten skal beholdes selv om JavaScript ikke ble kjørt.
+Nå fungerer skjemaet vårt uten JavaScript. Men det er ganske kjedelig å bli videresendt til en ny side for hver gang vi sender inn skjemaet.
 
-✍️ Skriv JavaScript-kode som bruker `fetch` til å sende inn skjemaet uten at siden laster inn. Du skal ikke behøve å endre på HTML nå.
+✍️ Skru på JavaScript igjen. Bruk igjen `fetch` til å sende inn skjemaet, uten å ødelegge for brukerne uten JavaScript.
 
 <details>
 <summary>🗝 Løsningsforslag</summary>
+
+Her har vi valgt å erstatte "click"-lytteren vi hadde på submit-knappen med en "submit"-lytter på selve skjemaet. Vi endrer også fetch-kallet til å sende form-dataen direkte med "Content-Type" satt til `application/x-www-form-urlencoded`.
 
 I `src/index.ts`:
 ```ts
