@@ -78,6 +78,7 @@ submitButton.addEventListener("click", async (event) => {
 ## Oppgave 2: Fallback
 
 📖 ["Sending form data" hos MDN](https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data)
+
 📖 ["POST"-metoden hos MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST)
 
 Skru av JavaScript i nettleseren din. I Firefox kan du gå til innstillinger i konsollen, så huke av "Disable JavaScript". I Chrome ligger den samme innstillingen under "Debugger" nederst i konsollinnstillingene.
