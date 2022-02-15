@@ -1,3 +1,34 @@
 body {
-    background-color: gainsboro;
+    background-color: #f7b2a6;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 3rem auto;
+    max-width: 40rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+input,
+select,
+textarea,
+button {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.subtitle {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.field {
+    margin-top: 1rem;
+}
+
+#submit-button {
+    margin-top: 1rem;
+    display: block;
 }

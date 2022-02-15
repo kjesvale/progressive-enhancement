@@ -4,17 +4,29 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css" />
-        <title>Progressive enhancement</title>
+        <title>Pokédex</title>
     </head>
     <body>
-        <h1>Demo av progressive enhancement</h1>
+        <div class="title">Pokédex</div>
+        <div class="subtitle">Submit a new pokémon</div>
 
-        <h2>Eksempel 1: Details</h2>
-        <span>Koden under fungerer ikke uten JavaScript.</span>
+        <div class="field">Name</div>
+        <input id="name-input" type="text" placeholder="Enter name" />
 
-        <details>
-            <summary>Pikachu</summary>
-            En gul, elektrisk musepokemon.
-        </details>
+        <div class="field">Type</div>
+        <select id="type-select">
+            <option value="">-- Choose a type --</option>
+            <option value="fire">Fire</option>
+            <option value="water">Water</option>
+            <option value="grass">Grass</option>
+            <option value="electric">Electric</option>
+        </select>
+
+        <div class="field">Description</div>
+        <textarea id="desc-input" placeholder="Write a short description" />
+
+        <button id="submit-button">Submit pokemon</button>
+
+        <script src="index.ts" type="module"></script>
     </body>
 </html>
