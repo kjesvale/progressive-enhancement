@@ -13,7 +13,7 @@ app.get("/api/pokemon", (_, res) => {
 
 app.post("/api/pokemon", (req, res) => {
     const pokemon = req.body as Pokemon;
-    const message = `Stored pokemon ${pokemon.name} with type ${pokemon.type}!`;
+    const message = `Stored ${pokemon.type} type pokemon ${pokemon.name}!`;
 
     console.log(message);
 

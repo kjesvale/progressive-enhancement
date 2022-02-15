@@ -1,6 +1,6 @@
 body {
     background-color: #f7b2a6;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: Georgia, "Times New Roman", serif;
     margin: 3rem auto;
     max-width: 40rem;
     padding: 1rem;
@@ -31,4 +31,8 @@ button {
 #submit-button {
     margin-top: 1rem;
     display: block;
+}
+
+#result {
+    margin-top: 2rem;
 }
