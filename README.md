@@ -83,6 +83,7 @@ Her holder det å bruke `<form>` sine method- og action-attributter i `src/index
     ...
 </form>
 ```
+</details>
 
 ## Oppgave 3: Enhance!
 
@@ -119,3 +120,4 @@ pokemonForm.addEventListener("submit", async (event) => {
     }
 });
 ```
+</details>
