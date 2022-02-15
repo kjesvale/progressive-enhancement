@@ -30,11 +30,11 @@ Nettsiden vil kjøre på [localhost:1234](http://localhost:1234), mens serveren 
 
 ## Oppgave 1: Semantiske skjemaer
 
+📖 ["Form"-elementet hos MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
+
 Åpne filen `src/index.html`. Skjemaet har noen forbedringspotensialer når det gjelder semantikk.
 
 ✍️ Skriv om koden til å bruke semantiske tags som `h1`, `form`, `label` osv.
-
-💡 Obs! Hvis du har submit-knappen inni et `<form>`-element vil et trykk på knappen automatisk sende inn skjemaet og laste inn siden på nytt. Du kan unngå denne oppførselen ved å legge til `event.preventDefault();` i knappens event-listener i `index.ts`.
 
 <details>
 <summary>🗝 Løsningsforslag</summary>
@@ -63,6 +63,16 @@ I `src/index.html`:
     <button id="submit-button">Submit pokemon</button>
 </form>
 ```
+
+Hvis du har submit-knappen inni et `<form>`-element vil et trykk på knappen automatisk sende inn skjemaet og laste inn siden på nytt. Du kan unngå denne oppførselen ved å legge til `event.preventDefault();` i knappens event-listener i `index.ts`:
+
+```ts
+submitButton.addEventListener("click", async (event) => {
+    event.preventDefault();
+    ...
+}
+```
+
 </details>
 
 ## Oppgave 2: Fallback
@@ -73,6 +83,8 @@ I `src/index.html`:
 Skru av JavaScript i nettleseren din. I Firefox kan du gå til innstillinger i konsollen, så huke av "Disable JavaScript". I Chrome ligger den samme innstillingen under "Debugger" nederst i konsollinnstillingene.
 
 ✍️ Få skjemaet til å fungere med JavaScript skrudd av.
+
+💡 Endepunktet for å sende inn et skjema ligger under `/api/pokemon`.
 
 <details>
 <summary>🗝 Løsningsforslag</summary>

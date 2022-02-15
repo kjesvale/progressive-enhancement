@@ -7,7 +7,7 @@ const descriptionInput = document.getElementById(
 const submitButton = document.getElementById("submit-button");
 const resultDiv = document.getElementById("result");
 
-submitButton.addEventListener("click", async () => {
+submitButton.addEventListener("click", async (event) => {
     const pokemon = {
         name: nameInput.value,
         type: typeSelect.value,
