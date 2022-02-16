@@ -35,7 +35,9 @@ cd server && npm run start
 
 Du finner da nettsiden på [http://localhost:3000](http://localhost:3000).
 
-## Emojiforklaring
+## Intro
+
+Du skal ikke trenge å gjøre noen endringer på serveren for å løse oppgavene. Det samme gjelder CSS-en under `src/styles.css`. Men stylingen er temmelig spartansk, så gjør det gjerne penere hvis du vil!
 
 ```
 📖 = Relevant lesestoff
@@ -139,6 +141,7 @@ Hvis du ikke gjorde det i forrige oppgave, er det også viktig å legge til `nam
     />
 
     <button id="submit-button">Submit pokemon</button>
+    <p aria-live="polite" id="result" />
 </form>
 ```
 </details>
@@ -181,3 +184,8 @@ pokemonForm.addEventListener("submit", async (event) => {
 });
 ```
 </details>
+
+
+## Bonusoppgaver
+
+- 

@@ -7,12 +7,6 @@ body {
     font-size: 1.2rem;
 }
 
-h1,
-h2 {
-    margin-top: 0;
-    font-weight: 200;
-}
-
 input,
 select,
 textarea,
@@ -30,15 +24,11 @@ button {
     font-size: 2rem;
 }
 
+label,
 .field,
-label {
-    display: block;
-    margin-top: 1rem;
-}
-
 #submit-button {
-    margin-top: 1rem;
     display: block;
+    margin-top: 1rem;
 }
 
 #result {
