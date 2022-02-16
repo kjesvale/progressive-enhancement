@@ -102,7 +102,7 @@ Skru av JavaScript i nettleseren din. I Firefox kan du gå til innstillinger i k
 
 ✍️ Få skjemaet til å fungere med JavaScript skrudd av.
 
-💡 Endepunktet for å sende inn et skjema ligger under `/api/pokemon`. Serveren håndterer både JSON- og _form data_-format på forespørslene. I begge tilfeller forventer den å motta `name`, `type` og `description` på pokemonen.
+💡 Endepunktet for å sende inn et skjema ligger under `/api/pokemon`, og støtter forespørsler med både JSON og _form data_. I begge tilfeller forventer den å motta `name`, `type` og `description` på pokemonen.
 
 <details>
 <summary>🗝 Løsningsforslag</summary>
