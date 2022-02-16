@@ -1,10 +1,10 @@
 # Progressive enhancement-workshop
 
-En workshop for å demonstrere hvordan man kan få et skjema til å fungere både med og uten JavaScript/TypeScript.
+En workshop for å demonstrere hvordan man kan få et skjema til å fungere både med og uten JavaScript.
 
 Prosjektet består av:
 
-- En frontend med HTML, CSS og TypeScript (Se `src`-mappen)
+- En frontend med HTML, CSS og JS (TypeScript) (Se `src`-mappen)
 - En minimal backend-server i Node (Se `server`-mappen)
 
 ## Kom i gang
