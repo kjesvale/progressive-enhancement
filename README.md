@@ -12,13 +12,11 @@ cd progressive-enhancement
 npm install
 ```
 
-Kjør kommandoene nedenfor i hvert sitt kommandovindu:
-```sh
-npm run start
-cd server && npm run start
-```
+Dette er et lite eksempelprosjekt med en frontend i HTML, CSS og TypeScript, samt en minimal Express-server i Node. All frontendkode ligger i `src`-mappen, serverkoden ligger under `server`.
 
-Nettsiden vil kjøre på [localhost:1234](http://localhost:1234), mens serveren kjører på [localhost:3000](http://localhost:3000).
+Du kan selv velge om du vil kjøre prosjektet i utviklingsmodus med `npm run start` og åpne [http://localhost:1234](http://localhost:1234), eller serve produksjonsbygget fra Express med `npm run build` og bruke [http://localhost:3000](http://localhost:3000).
+
+Kjør serveren i et eget kommandovindu med `cd server && npm run start`.
 
 ## Emojiforklaring
 
@@ -27,6 +25,7 @@ Nettsiden vil kjøre på [localhost:1234](http://localhost:1234), mens serveren 
 💡 = Nyttig informasjon
 📖 = Lesestoff
 ```
+
 
 ## Oppgave 1: Semantiske skjemaer
 
