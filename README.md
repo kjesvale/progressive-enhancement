@@ -149,7 +149,7 @@ Hvis du ikke gjorde det i forrige oppgave, er det også viktig å legge til `nam
 
 Nå fungerer skjemaet vårt uten JavaScript. Men det er ganske kjedelig å bli videresendt til en ny side for hver gang vi sender inn skjemaet.
 
-✍️ Skru på JavaScript igjen. Bruk igjen `fetch` til å sende inn skjemaet, uten å ødelegge for brukerne uten JavaScript.
+✍️ Skru på JavaScript igjen. Bruk `fetch` til å sende inn skjemaet, uten å ødelegge for brukerne uten JavaScript.
 
 <details>
 <summary>🗝 Løsningsforslag</summary>
