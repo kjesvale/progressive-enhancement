@@ -2,7 +2,7 @@
 
 En workshop for å demonstrere hvordan man kan få et skjema til å fungere både med og uten JavaScript.
 
-Prosjektet består av:
+Prosjektet bygges med Parcel og består av:
 
 - En frontend med HTML, CSS og JS (TypeScript) (Se `src`-mappen)
 - En minimal backend-server i Node (Se `server`-mappen)
@@ -26,21 +26,21 @@ cd server && npm run start
 
 Prosjektet vil da kjøre på [http://localhost:1234](http://localhost:1234) og proxye `/api` til serveren.
 
-Du kan også lage et produksjonsbygg av frontend-prosjektet og serve det via serveren.
+Du kan også lage et produksjonsbygg av frontend-prosjektet og serve det statisk i backend:
 
 ```sh
 npm run build
 cd server && npm run start
 ```
 
-Du når da nettsiden på [http://localhost:3000](http://localhost:3000).
+Du finner da nettsiden på [http://localhost:3000](http://localhost:3000).
 
 ## Emojiforklaring
 
 ```
+📖 = Relevant lesestoff
 ✍️ = Selve oppgaven
 💡 = Nyttig informasjon
-📖 = Lesestoff
 ```
 
 ## Oppgave 1: Semantiske skjemaer
@@ -102,14 +102,14 @@ Skru av JavaScript i nettleseren din. I Firefox kan du gå til innstillinger i k
 
 ✍️ Få skjemaet til å fungere med JavaScript skrudd av.
 
-💡 Endepunktet for å sende inn et skjema ligger under `/api/pokemon`.
+💡 Endepunktet for å sende inn et skjema ligger under `/api/pokemon`. Serveren håndterer både JSON- og _form data_-format på forespørslene. I begge tilfeller forventer den å motta `name`, `type` og `description` på pokemonen.
 
 <details>
 <summary>🗝 Løsningsforslag</summary>
 
 Her bruker vi `<form>` sine method- og action-attributter i `src/index.html` for å bestemme hvor og hvordan skjemaet skal sendes når brukeren trykker på submit-knappen.
 
-Hvis du ikke gjorde det i forrige oppgave, er det også viktig å legge til `name`-attributten på `input`, `select` og `textarea`-elementene. Når skjemaet sendes med "submit"-eventen, er det ikke lenger i JSON-format, men url-formatert form-data.
+Hvis du ikke gjorde det i forrige oppgave, er det også viktig å legge til `name`-attributten på `input`, `select` og `textarea`-elementene. Når skjemaet sendes med "submit"-eventen, er det ikke lenger i JSON-format, men url-formatert _form data_.
 
 
 ```html
