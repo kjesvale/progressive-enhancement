@@ -45,9 +45,9 @@ Du finner da nettsiden på [http://localhost:3000](http://localhost:3000).
 
 ## Oppgave 1: Semantiske skjemaer
 
-📖 ["Form"-elementet hos MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
+📖 [_Form_-elementet hos MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
 
-📖 ["Label"-elementet hos MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
+📖 [_Label_-elementet hos MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
 
 Åpne filen `index.html` inni `src`-mappen. Skjemaet har noen forbedringspotensialer når det gjelder semantikk.
 
@@ -94,9 +94,9 @@ submitButton.addEventListener("click", async (event) => {
 
 ## Oppgave 2: Fallback
 
-📖 ["Sending form data" hos MDN](https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data)
+📖 [_Sending form data_ hos MDN](https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data)
 
-📖 ["POST"-metoden hos MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST)
+📖 [_POST_-metoden hos MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST)
 
 Skru av JavaScript i nettleseren din. I Firefox kan du gå til innstillinger i konsollen, så huke av "Disable JavaScript". I Chrome ligger den samme innstillingen under "Debugger" nederst i konsollinnstillingene.
 
@@ -145,7 +145,7 @@ Hvis du ikke gjorde det i forrige oppgave, er det også viktig å legge til `nam
 
 ## Oppgave 3: Enhance!
 
-📖 ["Submit event" hos MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event)
+📖 [_Submit event_ hos MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event)
 
 Nå fungerer skjemaet vårt uten JavaScript. Men det er ganske kjedelig å bli videresendt til en ny side for hver gang vi sender inn skjemaet.
 
