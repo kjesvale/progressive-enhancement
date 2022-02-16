@@ -107,7 +107,7 @@ Skru av JavaScript i nettleseren din. I Firefox kan du gå til innstillinger i k
 <details>
 <summary>🗝 Løsningsforslag</summary>
 
-Her bruker vi `<form>` sine method- og action-attributter i `src/index.html` for å bestemme hvor og hvordan skjemaet skal sendes når brukeren trykker på submit-knappen.
+Her bruker jeg `<form>` sine method- og action-attributter i `src/index.html` for å bestemme hvor og hvordan skjemaet skal sendes når brukeren trykker på submit-knappen.
 
 Hvis du ikke gjorde det i forrige oppgave, er det også viktig å legge til `name`-attributten på `input`, `select` og `textarea`-elementene. Når skjemaet sendes med "submit"-eventen, er det ikke lenger i JSON-format, men url-formatert _form data_.
 
@@ -154,7 +154,7 @@ Nå fungerer skjemaet vårt uten JavaScript. Men det er ganske kjedelig å bli v
 <details>
 <summary>🗝 Løsningsforslag</summary>
 
-Her har vi valgt å erstatte "click"-lytteren vi hadde på submit-knappen med en "submit"-lytter på selve skjemaet. Vi endrer også fetch-kallet til å sende form-dataen direkte med "Content-Type" satt til `application/x-www-form-urlencoded`.
+Her har jeg valgt å erstatte "click"-lytteren vi hadde på submit-knappen med en "submit"-lytter på selve skjemaet. Jeg endrer også fetch-kallet til å sende form-dataen direkte med "Content-Type" satt til `application/x-www-form-urlencoded`.
 
 I `src/index.ts`:
 ```ts
