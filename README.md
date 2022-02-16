@@ -97,7 +97,7 @@ Hvis du ikke gjorde det i forrige oppgave, er det også viktig å legge til `nam
 
 ```html
 <form method="POST" action="/api/pokemon">
-    <label for="name-input" class="field">Name</label>
+    <label for="name-input">Name</label>
     <input
         name="name"
         id="name-input"
@@ -105,7 +105,7 @@ Hvis du ikke gjorde det i forrige oppgave, er det også viktig å legge til `nam
         placeholder="Enter name"
     />
 
-    <label for="type-select" class="field">Type</label>
+    <label for="type-select">Type</label>
     <select name="type" id="type-select">
         <option value="">-- Choose a type --</option>
         <option value="fire">Fire</option>
@@ -114,7 +114,7 @@ Hvis du ikke gjorde det i forrige oppgave, er det også viktig å legge til `nam
         <option value="electric">Electric</option>
     </select>
 
-    <label class="field">Description</label>
+    <label>Description</label>
     <textarea
         name="description"
         id="description-input"
