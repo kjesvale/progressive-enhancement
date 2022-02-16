@@ -1,22 +1,39 @@
-# Progressive enhancement
+# Progressive enhancement-workshop
 
-En liten workshop om semantikk og progressive enhancement.
+En workshop for å demonstrere hvordan man kan få et skjema til å fungere både med og uten JavaScript/TypeScript.
 
+Prosjektet består av:
+
+- En frontend med HTML, CSS og TypeScript (Se `src`-mappen)
+- En minimal backend-server i Node (Se `server`-mappen)
 
 ## Kom i gang
 
-Klon repoet og installer:
+Klon prosjektet og installer frontend og backend:
 ```sh
 git clone https://github.com/kjesvale/progressive-enhancement
 cd progressive-enhancement
 npm install
+cd server && npm install
 ```
 
-Dette er et lite eksempelprosjekt med en frontend i HTML, CSS og TypeScript, samt en minimal Express-server i Node. All frontendkode ligger i `src`-mappen, serverkoden ligger under `server`.
+Det letteste er å kjøre prosjektet i utviklingsmodus med følgende kommandoer i hvert sitt kommandovindu:
 
-Du kan selv velge om du vil kjøre prosjektet i utviklingsmodus med `npm run start` og åpne [http://localhost:1234](http://localhost:1234), eller serve produksjonsbygget fra Express med `npm run build` og bruke [http://localhost:3000](http://localhost:3000).
+```sh
+npm run start
+cd server && npm run start
+```
 
-Kjør serveren i et eget kommandovindu med `cd server && npm run start`.
+Prosjektet vil da kjøre på [http://localhost:1234](http://localhost:1234) og proxye `/api` til serveren.
+
+Du kan også lage et produksjonsbygg av frontend-prosjektet og serve det via serveren.
+
+```sh
+npm run build
+cd server && npm run start
+```
+
+Du når da nettsiden på [http://localhost:3000](http://localhost:3000).
 
 ## Emojiforklaring
 
@@ -26,19 +43,20 @@ Kjør serveren i et eget kommandovindu med `cd server && npm run start`.
 📖 = Lesestoff
 ```
 
-
 ## Oppgave 1: Semantiske skjemaer
 
 📖 ["Form"-elementet hos MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
 
-Åpne filen `src/index.html`. Skjemaet har noen forbedringspotensialer når det gjelder semantikk.
+📖 ["Label"-elementet hos MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
 
-✍️ Skriv om koden til å bruke semantiske tags som `h1`, `form`, `label` osv.
+Åpne filen `index.html` inni `src`-mappen. Skjemaet har noen forbedringspotensialer når det gjelder semantikk.
+
+✍️ Skriv om koden til å bruke flere semantiske tags.
 
 <details>
 <summary>🗝 Løsningsforslag</summary>
 
-I `src/index.html`:
+Inni `src/index.html`:
 ```html
 <h1 class="title">Pokédex</h1>
 <h2 class="subtitle">Submit a new pokémon</h2>
