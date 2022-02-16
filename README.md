@@ -198,6 +198,6 @@ pokemonForm.addEventListener("submit", async (event) => {
 
 Vi ønsker ikke dobbelt opp av samme pokemon i Pokédex-en. 
 
-✍️ Valider navnet på pokemonen med JavaScript og gi en feilmelding hvis det allerede finnes en pokemon med samme navn i "databasen" på serveren. Dette krever også endringer på serveren.
+✍️ Valider navnet på pokemonen med JavaScript og gi en feilmelding hvis det allerede finnes en pokemon med samme navn i "databasen" på serveren.
 
-💡 Husk at pokemonene er lagret i minnet til serveren, og denne restartes hver gang det skjer en endring i koden.
+💡 Dette krever også endringer på serveren. Husk at pokemonene er lagret i minne, og at serveren restartes hver gang det skjer en endring i koden.
