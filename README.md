@@ -11,8 +11,8 @@ Prosjektet bygges med Parcel og består av:
 
 Klon prosjektet og installer frontend og backend:
 ```sh
-git clone https://github.com/kjesvale/progressive-enhancement
-cd progressive-enhancement
+git clone https://github.com/kjesvale/progressive-enhancement-workshop
+cd progressive-enhancement-workshop
 npm install
 cd server && npm install
 ```
